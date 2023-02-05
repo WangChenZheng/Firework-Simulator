@@ -1,0 +1,54 @@
+/*
+此源码是基于 XgpNwb 的二次修改
+Github：https://github.com/NianBroken/Firework_Simulator
+Gitee：https://gitee.com/nianbroken/Firework_Simulator
+*/
+* {
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    background-color: #000;
+  }
+  
+  body {
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Russo One", arial, sans-serif;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stage-container {
+    overflow: hidden;
+    box-sizing: initial;
+    border: 1px solid #222;
+    margin: -1px;
+  }
+  
+  .canvas-container {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s;
+  }
+  .canvas-container canvas {
+    position: absolute;
+    mix-blend-mode: lighten;
+    transform: translateZ(0);
+  }
