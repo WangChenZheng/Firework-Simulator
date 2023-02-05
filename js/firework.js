@@ -1,7 +1,7 @@
 /*
-此源码是基于 XgpNwb 的二次修改
-Github：https://github.com/NianBroken/Firework_Simulator
-Gitee：https://gitee.com/nianbroken/Firework_Simulator
+此源码是基于 Caleb Miller 的二次修改
+Github：https://github.com/MilllerTime
+Preview: https://codepen.io/MillerTime/pen/XgpNwb
 */
 'use strict';
 // console.clear();
