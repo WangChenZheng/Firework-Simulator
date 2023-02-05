@@ -324,17 +324,17 @@ const horsetailShell = (size = 1) => {
 	};
 };
 
-const yearShell = (size = 1) => {
+const blessShell = (size = 1) => {
 	return {
 		shellSize: size,
 		spreadSize: 300 + size * 100,
 		starLife: 900 + size * 200,
-		year: true
+		bless: true
 	};
 }
 
 function randomShellName() {
-	return Math.random() < 0.2 ? 'Year' : shellNames[(Math.random() * (shellNames.length - 1)) | 0];
+	return Math.random() < 0.2 ? 'Bless' : shellNames[(Math.random() * (shellNames.length - 1)) | 0];
 }
 
 function randomShell(size) {
@@ -368,7 +368,7 @@ const shellTypes = {
 	'Ring': ringShell,
 	'Strobe': strobeShell,
 	'Willow': willowShell,
-	'Year': yearShell
+	'Bless': blessShell
 };
 
 const shellNames = Object.keys(shellTypes);
@@ -1194,7 +1194,7 @@ class Shell {
 						star.sparkTimer = Math.random() * star.sparkFreq;
 					}
 				});
-			} else if (this.year) {
+			} else if (this.bless) {
 				let text = randomText()
 				createTextBurst(text, x, y, color)
 				createBurst(this.starCount, starFactory);
