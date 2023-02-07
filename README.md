@@ -1,5 +1,7 @@
 # Firework Simulator
 
+演示：<http://jsgmlf.wang/custom/firework.html>
+
 此源码是基于 Caleb Miller 的二次修改
 
 https://codepen.io/MillerTime/pen/XgpNwb
